@@ -12,18 +12,18 @@ def namegame
 end
 def guessgame
   @guess = params["guess"]
-  
+
   @guess = @guess.to_i
 
   if @guess == 32
-    @guess == "you win!"
-  elsif @guess <= 32
-    @guess == "you need to guess higher!"
-  else @guess >= 32
-    @guess == "you need to guess lower!"
-end
+    @guess = 'you win!'
+  elsif @guess < 32
+    @guess = 'you need to guess higher!'
+  else @guess > 32
+    @guess = 'you need to guess lower!'
 
-  
+
+  end
   render "usercommit.json.jb"
 
 
