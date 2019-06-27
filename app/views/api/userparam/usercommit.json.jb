@@ -1,1 +1,2 @@
-{message: @guess}
+{message: @user_input}
+#@name
