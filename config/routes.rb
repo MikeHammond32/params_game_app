@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
 
     get "/segment_parameter_url/:user_input" => "userparam#seg_method"
+
+    post "/body_parameter_url" => "userparam#body_parameter_action"
   end
 end

@@ -43,6 +43,10 @@ class Api::UserparamController < ApplicationController
 
     render "usercommit.json.jb"
 
+  def body_parameter_action
+    
+    render "body.json.jb"
 
+   end
   end
 end
